@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 import java.util.Set;
 
 @Entity
-@Table(name = "actor")
+@Table(schema = "movie",name = "actor")
 public class Actor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

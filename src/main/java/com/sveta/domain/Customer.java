@@ -13,7 +13,7 @@ public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "customer_id")
-    private Byte id;
+    private Short id;
 
     @ManyToOne
     @JoinColumn(name = "store_id")
@@ -41,11 +41,11 @@ public class Customer {
     @UpdateTimestamp
     private LocalDateTime lastUpdate;
 
-    public Byte getId() {
+    public Short getId() {
         return id;
     }
 
-    public void setId(Byte id) {
+    public void setId(Short id) {
         this.id = id;
     }
 
